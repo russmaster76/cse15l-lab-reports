@@ -19,3 +19,7 @@
 print print
 nosir
 ```
+[Lab Report 1](lab-report-1-week-2.md)
+>
+
+[Lab Report 1](https://russmaster76.github.io/CSE15L-Lab-Reports/lab-report-1-week-2.html)
