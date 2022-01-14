@@ -34,6 +34,7 @@ ls -a - list all files
 cat <file> - prints the contents of a file
 ```
 * Below is an example of how a sucessfully ran command could look. In this case I used `ls -a`.
+
 ![image](Lab2pic3.PNG)
 
 * *Note: To log out of the remote server from the terminal, you can use CTRL+D, or run the command* `exit`.
@@ -59,22 +60,27 @@ class WhereAmI {
 * After this, you will be able to run the program on the server, this can be be done the same way it was offline, however, you should notice that the output of the program is different.
 
 `Offline`
+
 ![image](Lab2pic5.PNG)
 
 `Online (Signed in with SSH)`
+
 ![image](Lab2pic4.PNG)
 
 __Step 5:__ Creating an SSH Key
 
 * First you will want to open your Visual Studio Terminal, offline. and type `ssh-keygen` in. 
 * It will then ask for a location to save the key, you may follow the picture below, but make sure to change the user.
+
 ![image](Lab2pic6.PNG)
+
 * When this is complete, ssh back into the server using  `ssh cs15lwi22xxx@ieng6.ucsd.edu`. Once on the server, you will make a directory to store the key by using the command `mkdir.ssh`
 
 * You will then want to log out of the server, then offline, copy the public key into the server's `.ssh` directory you created using the following command 
 * `scp /Users/russ/.ssh/id_rsa.pub cs15lwi22xxx@ieng6.ucsd.edu:~/.ssh/authorized_keys`
 * *Note: Make sure to use the proper user, location, and sign in details when following this step, do not just copy the command without changing it.*
 * If successful, you will not have to input your password, similar to in the image below
+
 ![image](Lab2pic7.PNG)
 
 __Step 6:__ Optimizing Remote Running
@@ -89,4 +95,5 @@ scp WhereAmI.java cs15lwi22xxx@ieng6.ucsd.edu:~/; ssh cs15lwi22xxx@ieng6.ucsd.ed
 * If this is done properly, then it should do all that was said above. The reason this works is just due to syntax, using semicolons will end one command, and then the contents inside the quotation marks will be run after we are connected to the server.
 
 * Proper usage should reflect the image below.
+
 ![image](Lab2pic8.PNG)
