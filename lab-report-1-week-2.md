@@ -1,14 +1,14 @@
 # Week 2 Lab Report
 [__Back To Home Page__](https://russmaster76.github.io/cse15l-lab-reports/)
 
-## Instaling Visual Studio
+## Step 1. Instaling Visual Studio
 * Firstly, you will want to visit [Visual Studio Code](https://code.visualstudio.com/) and follow the instructions to download it onto your preferred workspace.
 
 * When it is downloaded and opened, it should appear as it does below.
 
 ![image](Lab2pic1.PNG)
 
-## Remote Connection
+## Step 2. Remote Connection
 * You will need your account details for 15L, you can find them [here](https://sdacs.ucsd.edu/~icc/index.php) (*NOTE: If this is your first time, you will have to change/reset your password*)
 
 * From the website above, you will find a username, this will be used for your remote access. This username will follow a convention and look similar to `cs15lwi22xxx`, with the wi22 differing depending on quarter, and the xxx being the personalized section.
@@ -23,7 +23,7 @@
 
 ![image](Lab2pic2.PNG)
 
-## Running Commands
+## Step 3. Running Commands
 * When we are connected, there is a variety of commands we can try. 
 * For Example
 ```
@@ -39,7 +39,7 @@ cat <file> - prints the contents of a file
 
 * *Note: To log out of the remote server from the terminal, you can use CTRL+D, or run the command* `exit`.
 
-## Moving Files using `scp`
+## Step 4. Moving Files using `scp`
 * First, we will want to create a java file on our computer titled `WhereAmI.java` that prints out the name of our OS, user, home, and directory. 
 * This can be done by creating a new file in Visual Studio, Pasting the below code in, and Saving the file as `WhereAmI` in the java format.
 ```
@@ -67,7 +67,7 @@ class WhereAmI {
 
 ![image](Lab2pic4.PNG)
 
-## Creating an SSH Key
+## Step 5. Creating an SSH Key
 
 * First you will want to open your Visual Studio Terminal, offline. and type `ssh-keygen` in. 
 * It will then ask for a location to save the key, you may follow the picture below, but make sure to change the user.
@@ -83,7 +83,7 @@ class WhereAmI {
 
 ![image](Lab2pic7.PNG)
 
-## Optimizing Remote Running
+## Step 6. Optimizing Remote Running
 
 * In order to optimize remote running, you can type multiple commands in one line.
 
