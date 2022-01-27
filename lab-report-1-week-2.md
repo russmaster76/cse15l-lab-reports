@@ -1,14 +1,14 @@
 # Week 2 Lab Report
 [__Back To Home Page__](https://russmaster76.github.io/cse15l-lab-reports/)
 
-__Step 1:__ Instaling Visual Studio
+## Instaling Visual Studio
 * Firstly, you will want to visit [Visual Studio Code](https://code.visualstudio.com/) and follow the instructions to download it onto your preferred workspace.
 
 * When it is downloaded and opened, it should appear as it does below.
 
 ![image](Lab2pic1.PNG)
 
-__Step 2:__ Remote Connection
+## Remote Connection
 * You will need your account details for 15L, you can find them [here](https://sdacs.ucsd.edu/~icc/index.php) (*NOTE: If this is your first time, you will have to change/reset your password*)
 
 * From the website above, you will find a username, this will be used for your remote access. This username will follow a convention and look similar to `cs15lwi22xxx`, with the wi22 differing depending on quarter, and the xxx being the personalized section.
@@ -23,7 +23,7 @@ __Step 2:__ Remote Connection
 
 ![image](Lab2pic2.PNG)
 
-__Step 3:__ Running Commands
+## Running Commands
 * When we are connected, there is a variety of commands we can try. 
 * For Example
 ```
@@ -39,7 +39,7 @@ cat <file> - prints the contents of a file
 
 * *Note: To log out of the remote server from the terminal, you can use CTRL+D, or run the command* `exit`.
 
-__Step 4:__ Moving Files using `scp`
+## Moving Files using `scp`
 * First, we will want to create a java file on our computer titled `WhereAmI.java` that prints out the name of our OS, user, home, and directory. 
 * This can be done by creating a new file in Visual Studio, Pasting the below code in, and Saving the file as `WhereAmI` in the java format.
 ```
@@ -67,7 +67,7 @@ class WhereAmI {
 
 ![image](Lab2pic4.PNG)
 
-__Step 5:__ Creating an SSH Key
+## Creating an SSH Key
 
 * First you will want to open your Visual Studio Terminal, offline. and type `ssh-keygen` in. 
 * It will then ask for a location to save the key, you may follow the picture below, but make sure to change the user.
@@ -83,7 +83,7 @@ __Step 5:__ Creating an SSH Key
 
 ![image](Lab2pic7.PNG)
 
-__Step 6:__ Optimizing Remote Running
+## Optimizing Remote Running
 
 * In order to optimize remote running, you can type multiple commands in one line.
 
@@ -97,3 +97,13 @@ scp WhereAmI.java cs15lwi22xxx@ieng6.ucsd.edu:~/; ssh cs15lwi22xxx@ieng6.ucsd.ed
 * Proper usage should reflect the image below.
 
 ![image](Lab2pic8.PNG)
+
+* Running the code on one line will save time as we do not have to wait for each line to execute. It also allows us to save the amount times we have to write `ssh`, as we would have to use that on most lines.
+* By doing this, we can save both keystrokes and time. Reducing keystrokes to 10 in proper situations.
+
+```
+1 keystroke on the up arrow to get to the previous command
+1 keystroke to add a semi colon
+3 keystrokes to copy in your ssh username
+5 keystrokes to copy paste the file that you are compiling and running, which in this case is WhereAmI.java.
+```
