@@ -51,9 +51,23 @@ Code Within Test File
 # Third Bug Fix
 
 ## Code Change and Bug
+__Bug:__ The bug in this situation was that when a test file with no close bracket was tested in the program, the program would enter an infinite loop, searching for a close bracket that doesn't exist. Instead, the program should just return empty brackets, as no links are provided.
+
+![image](Lab4pic5.PNG)
 
 ## Failing Test File
 
+[Failing Test File on GitHub](https://github.com/russmaster76/markdown-parse/blob/main/test4.md?plain=1)
+
+Code Within Test File
+```
+)[
+```
+
+
 ## Symptom of Failure Inducing Input
+![image](Lab4pic6.PNG)
 
 ## Relationship Between Bug, Symptom, and Failure-inducing input
+* The cause of the bug is that the program continued to search the file for a close bracket, even though there was none. Because there was none, it will just continue to search infinitely.
+* The relationship between these three aspects is that the bug resulted in the symptom of an infinite loop. And the failure inducing input, the test file, was what showed the symptom.
