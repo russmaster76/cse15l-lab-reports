@@ -79,7 +79,7 @@
 
 ## Group Implementation Tester Output
 
-![image](lab8pic4.PNG)
+![image](Lab8pic4.PNG)
 
 ## Reviewed Group Tester Output
 
