@@ -46,7 +46,7 @@ done
 
 - The output from my groups implementation is correct, as the given test file doesn't contain a link.
 
-![image](lab10pic1.PNG)
+![image](Lab10pic1.PNG)
 
 - I believe that the problem with the Week 9 MarkdownParse implementation is that it checks if a link is valid only if the open parentheses come right after a closed bracket, which is not the case in the given test file.
 
@@ -64,6 +64,6 @@ done
 
 - The implementation from Week 9 Markdown parse is correct, as it contains the link that is present within the test file.
 
-![image](lab10pic2.PNG)
+![image](Lab10pic2.PNG)
 
 - I think that the bug in the implementation of my group is that the code checks for the first sequence of `(]` within a given file. This is normally at the beginning of the link, however, the test file provided has two instances of this, and because of the link is contained within the second one, it is not returned. In order to fix this, we must adjust the code to not stop after the first instance of `(]` and look at the last index as well.
